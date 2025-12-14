@@ -3,7 +3,7 @@ name = "stronghold-excavator"
 version = "0.1.0"
 edition = "2021"
 description = "Minimal read-only extraction tool for Stronghold snapshot files"
-license = "Apache-2.0"
+license = "MIT"
 
 [dependencies]
 iota_crypto = { package = "iota-crypto", version = "0.23", default-features = false, features = [

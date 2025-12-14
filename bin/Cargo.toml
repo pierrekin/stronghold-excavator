@@ -3,7 +3,7 @@ name = "excavator"
 version = "0.1.0"
 edition = "2021"
 description = "CLI for extracting secrets from Stronghold snapshot files"
-license = "Apache-2.0"
+license = "MIT"
 
 [[bin]]
 name = "excavator"
