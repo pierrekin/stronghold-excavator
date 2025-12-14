@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = ["lib", "bin"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+# Optimize crypto crates even in dev mode for performance
+[profile.dev.package.scrypt]
+opt-level = 3
+
+[profile.dev.package.iota-crypto]
+opt-level = 3

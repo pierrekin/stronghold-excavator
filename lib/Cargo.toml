@@ -1,0 +1,24 @@
+[package]
+name = "stronghold-excavator"
+version = "0.1.0"
+edition = "2021"
+description = "Minimal read-only extraction tool for Stronghold snapshot files"
+license = "Apache-2.0"
+
+[dependencies]
+iota_crypto = { package = "iota-crypto", version = "0.23", default-features = false, features = [
+    "age",
+    "chacha",
+    "blake2b",
+    "std",
+] }
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+bincode = "1.3"
+thiserror = "1.0"
+hex = "0.4"
+
+[dev-dependencies]
+iota_stronghold = "2.1"
+zeroize = "1.5"
